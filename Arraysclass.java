@@ -2,10 +2,13 @@
 //Date:- 08/08/2024 Thursday
 //Day:- 01
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 public class Arraysclass {
     //
     public static void main(String[] args) {
         int arr[]={9,6,5,1,7,2,5};
+        Integer arr3[]={9,6,5,1,7,2,5};
         int size=arr.length;
         int arr2[]=new int[size];
         //BINARY SEARCH
@@ -26,6 +29,10 @@ public class Arraysclass {
         //Comparing two arrays
         System.out.print("Comparing the two arrays:- ");
         System.out.println(Arrays.equals(arr,arr2));
+        //Descending order of arrays
+        Arrays.sort(arr3,Collections.reverseOrder());
+        System.out.print("REVERSE ORDER OF ARRAY:-");
+        System.out.println(Arrays.toString(arr3));
 
 
 
